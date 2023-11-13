@@ -9,11 +9,12 @@ const Card = () => {
         Please let us know how we did with your support request.All feedback is
         appreciated to help us improve improve our offering!
       </p>
-
+      {Array(5).map((rate) => {
+        return <li key={rate}>1</li>;
+      })}
       <button className="bg-[--Orange] rounded-full w-full  p-3">SUBMIT</button>
     </div>
   );
 };
 
 export default Card;
-// bg-gradient-to-b from-[--Dark-Blue] to-[--Very-Dark-Blue]
