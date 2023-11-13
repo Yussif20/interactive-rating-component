@@ -1,8 +1,10 @@
+import Card from "./Components/Card";
+
 function App() {
   return (
     <>
-      <main className="bg-blue-950 w-full min-h-screen">
-        <h1 className="text-red-600">Hello</h1>
+      <main className="bg-[#121417] w-full min-h-screen flex items-center justify-center">
+        <Card />
       </main>
     </>
   );
