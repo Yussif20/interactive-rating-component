@@ -1,3 +1,100 @@
+:root {
+  --color-Orange: hsl(25, 97%, 53%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+/* Css Reset Start  */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+/* Css Reset End  */
+body {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: var(--color-White);
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+}
+.card {
+  padding: 2.6rem 1.8rem;
+  background-color: #1c232d;
+  border-radius: 1.2rem;
+  max-width: 30%;
+}
+.rating-star {
+  background-color: #262f38;
+  padding: 1.2rem 2rem;
+  border-radius: 50%;
+}
+.card--heading {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+.card--text {
+  margin-bottom: 1.6rem;
+  line-height: 2.2rem;
+  color: var(--color-light-grey);
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating__num {
+  font-weight: bold;
+  background-color: #262f38;
+  color: #99a2ab;
+  padding: 1.2rem 2rem;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  &:hover {
+    color: #36393e;
+    background-color: #fffffd;
+  }
+  &:active {
+    color: #36393e;
+    background-color: #fc7615;
+  }
+}
+.cta-btn {
+  cursor: pointer;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  width: 100%;
+  background-color: var(--color-Orange);
+  transition: 0.3s ease;
+  &:hover {
+    background-color: #ffffff;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
