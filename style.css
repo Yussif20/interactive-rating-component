@@ -39,10 +39,16 @@ body {
   background-color: var(--very-dark-blue);
 }
 .card {
+  overflow: hidden;
+  display: flex;
+  gap: 3rem;
   padding: 2.6rem 1.8rem;
   background-color: #1c232d;
   border-radius: 1.2rem;
   max-width: 30%;
+}
+.card__info-start {
+  flex: 1 0 100%;
 }
 .rating-star {
   background-color: #262f38;
@@ -94,6 +100,21 @@ body {
   &:hover {
     background-color: #ffffff;
   }
+}
+.card__info-thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 0 100%;
+}
+.card--subtext {
+  background-color: #262f38;
+  color: var(--color-Orange);
+  padding: 1.2rem 2rem;
+  margin-top: 2rem;
+  border-radius: 30%;
 }
 .attribution {
   font-size: 11px;
