@@ -81,7 +81,7 @@ body {
     color: #36393e;
     background-color: #fffffd;
   }
-  &:active {
+  &.active {
     color: #36393e;
     background-color: #fc7615;
   }
